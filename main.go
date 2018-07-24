@@ -15,12 +15,16 @@ const (
 	DictionaryFILE = "./checkFolder/Dictionary.txt"
 	DictionaryDataJSON = "./checkFolder/Dictionary.json"
 	ErrorlogFILE = "./checkFolder/errorLog.txt"
+	EnglishDictFILE = "./checkFolder/EnglishDict.txt"
+	EnglishDictJSONFILE = "./checkFolder/EnglishDict.json"
 )
 
 func main() {
 	fmt.Println("Hello, World!")
 	//没有字典可用的我 没法子只能自己造轮子了 formatDictionary() 就是造轮子的方法
-	formatDictionary()
+	//formatDictionary()
+	addEnglishWorldList()
+	//
 
 	//轮子造好了 就是用了
 	CheckWorlds()
@@ -120,7 +124,7 @@ func CheckWorlds() {
 			// 	check(error)
 			// }
 
-			if _,ok:=m[strings.ToLower(strWorld)];!ok{
+			if _, ok := m[strings.ToLower(strWorld)]; !ok{
 				strErrorMessage := m[strWorld] + "\n"
 				strErrorMessage += strWorld + "\n"
 				strErrorMessage += val.Value + "\n"
@@ -132,6 +136,7 @@ func CheckWorlds() {
 		}
     }
 }
+
 //利用正则表达式压缩字符串，去除空格或制表符
 func compressStr(str string) string {
     if str == "" {
@@ -180,5 +185,32 @@ func formatDictionary(){
 func check(e error) {
     if e != nil {
         panic(e)
+    }
+}
+
+func addEnglishWorldList(){
+	Dfile, err := os.Open(EnglishDictFILE) // For read access.
+	if err != nil {
+		fmt.Printf("error: %v", err)
+		return
+	}
+	defer Dfile.Close()
+	len, err := Dfile.Seek(0, 2) //获取文件长度
+	strbyte := make([]byte, len)
+	Dfile.Seek(0, 0)    //移回指针到文件开头
+	Dfile.Read(strbyte) //读文件
+	aryWorldList := strings.Split(string(strbyte),"\r\n")
+	var DictionaryMap map[string]string /*创建集合 */
+	DictionaryMap = make(map[string]string)
+	for _, value := range aryWorldList {
+		if _, ok := DictionaryMap[value]; !ok {
+			DictionaryMap[value] = "";
+		}
+	}
+    if data, err := json.Marshal(DictionaryMap); err == nil {
+		// fmt.Printf("%s\n", data)
+		// d1 := []byte("hello\ngo\n")
+		error := ioutil.WriteFile(EnglishDictJSONFILE, data, 0644)
+		check(error)
     }
 }
