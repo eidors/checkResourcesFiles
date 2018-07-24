@@ -7,7 +7,8 @@ import (
 	"os"
     "strings"
     "encoding/json"
-    "regexp"
+	"regexp"
+	"time"
 )
 
 const (
@@ -23,7 +24,7 @@ func main() {
 	fmt.Println("Hello, World!")
 	//没有字典可用的我 没法子只能自己造轮子了 formatDictionary() 就是造轮子的方法
 	//formatDictionary()
-	addEnglishWorldList()
+	//addEnglishWorldList()
 	//
 
 	//轮子造好了 就是用了
@@ -64,7 +65,6 @@ func CheckWorlds() {
 	// }
 	// fmt.Println(string(dat))
 
-
 	//open log files
 	ErrorLogFILE,err := os.OpenFile(ErrorlogFILE,os.O_APPEND,0777)
 	if err != nil{
@@ -81,9 +81,8 @@ func CheckWorlds() {
 	defer Rfile.Close()
 	Rdata, err := ioutil.ReadAll(Rfile)
 
-	
 	//open Json Dictionary.json
-	Dfile, err := os.Open(DictionaryDataJSON) // For read access.
+	Dfile, err := os.Open(EnglishDictJSONFILE) // For read access.
 	if err != nil {
 		fmt.Printf("error: %v", err)
 		return
@@ -115,17 +114,12 @@ func CheckWorlds() {
 		strLabel = compressStr(strLabel)
 		strings.Split(strLabel," ")
 		for _, strWorld := range strings.Split(strLabel," "){
-			// fmt.Println(strWorld)
-			// m[strWorld]
-			// if m[strWorld] == "" {
-			// 	strErrorMessage := m[strWorld] + "\n"
-			// 	strErrorMessage += val.Value + "\n"
-			// 	error := ioutil.WriteFile(ErrorlogFILE, []byte(strErrorMessage), 0644)
-			// 	check(error)
-			// }
-
+			if strWorld == ""{
+				continue;
+			}
 			if _, ok := m[strings.ToLower(strWorld)]; !ok{
-				strErrorMessage := m[strWorld] + "\n"
+				//strErrorMessage := "now datetime:%v\n" = m[strWorld] + "\n"
+				strErrorMessage := "--Now datetime: " + time.Now().Format("2006-01-02 15:04:05") + "\n"
 				strErrorMessage += strWorld + "\n"
 				strErrorMessage += val.Value + "\n"
 				_,err := ErrorLogFILE.Write([]byte(strErrorMessage))
@@ -178,7 +172,6 @@ func formatDictionary(){
 		// d1 := []byte("hello\ngo\n")
 		error := ioutil.WriteFile(DictionaryDataJSON, data, 0644)
 		check(error)
-		
     }
 }
 
