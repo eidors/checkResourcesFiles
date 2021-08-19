@@ -1,0 +1,281 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="baidu-site-verification" content="ig36d6galc">
+   <!-- 推广优化组件开始 -->  
+    
+<title>娲石集团</title>
+<meta name="keywords" content="娲石|娲石集团|水泥|商砼|建材石|水路运输|混凝土|骨料|">
+<meta name="description" content="娲石集团，前身是湖北省水利厅阳逻水泥厂，始建于1970年，1996年改制为湖北娲石股份有限公司，2004年改制为民营股份制企业，2014年经国家工商总局批准成立娲石水泥集团有限公司，并作为母公司而组建娲石水泥集团（简称娲石集团）。"> 
+ 
+    <!-- 推广优化组件结束 -->
+<link href="static/css/css.css" rel="stylesheet" type="text/css">
+<script src="static/js/jquery-1.7.1.min.js"></script>
+<script src="static/js/main.js"></script>
+<script src="static/js/jquery.SuperSlide.js"></script>
+<script src="static/js/swfobject.js"></script>
+<script src="static/js/modernizr-2.5.3.min.js"></script>
+<script src="static/js/scroll.js"></script>
+<script src="static/js/gototop.js"></script>
+<script type="text/javascript" src="static/js/pic.js"></script>
+</head>
+
+<body>
+<div class="header" id="head">
+    <div class="header_top">
+        <div class="logo"><a href="index.html"><img src="static/picture/logo.png" alt="娲石"></a></div>
+        
+    </div><!--end header_top-->       
+    <div class="navbody">
+        <div class="nav">
+            <ul class="nav_ul"> 
+<li class="nav_li"><a class="on" href="index.html">网站首页</a></li>
+<li class="nav_li"><a class="on" href="about-1.html">集团慨况</a> 
+                   <div class="subnav sub-ul01">
+                   <ul>
+				   <li><a href="about-1.html">集团简介</a></li>
+				   <li><a href="about-2.html">总裁致辞</a></li>
+				   <li><a href="about-3.html">董事会</a></li>
+				   <li><a href="about-4.html">组织机构</a></li>
+				   <li><a href="">发展历程</a></li>
+				   <li><a href="about-6.html">企业文化</a></li>
+				   <li><a href="about-7.html">资质荣誉</a></li>
+				   
+			       </ul>
+                   </div> 
+                </li>
+
+<li class="nav_li"><a class="on" href="industry-9.html">集团产业</a> 
+                   <div class="subnav sub-ul02">
+            <ul>
+			       <li><a href="industry-9.html">娲石水泥集团</a></li>
+				   <li><a href="industry-32.html">武汉娲石商砼</a></li>
+				   <li><a href="industry-31.html">武汉通达水运</a></li>
+			        <li><a href="industry-30.html">武汉通达船舶制造</a></li>
+				   <li><a href="industry-33.html">武汉天研科技</a></li>
+				   <li><a href="javascript:;">武汉万世科技</a></li>
+				   <li><a href="javascript:;">娲石技术学校</a></li>
+				   <li><a href="industry-10.html">阳新娲石水泥</a></li>
+				   <li><a href="industry-11.html">阳新娲石商砼</a></li>
+				   <li><a href="industry-28.html">阳新娲石建材</a></li>
+				   <li><a href="industry-36.html">金峰分公司</a></li>
+				   
+				  
+				   
+			</ul>
+                    </div> 
+                </li>
+
+
+<li class="nav_li"><a class="on" href="news-14830_1.html">新闻中心</a>
+                   <div class="subnav sub-ul03">
+                        <ul>
+				   <li><a href="news-14830_1.html" class='tit'>公司动态</a></li>
+				   <li><a href="news-14830_2.html" class='tit'>环境信息公开</a></li>
+				   
+				   <li><a href="news-14830_4.html" class='tit'>员工之声</a></li>
+				   <li><a href="news-14830_5.html" class='tit'>视频中心</a></li>
+			</ul>
+                    </div>                        
+                </li>
+				
+
+
+<li class="nav_li"><a class="on" href="talent-17.html">人才招聘</a>   
+                   <div class="subnav sub-ul06">
+                        <ul>
+				   <li><a href="javascript:;">企业内训</a></li>
+				   <li><a href="talent-17.html">人才战略</a></li>
+				   <li><a href="talent-18.html">入职指南</a></li>
+				   <li><a href="sociology.html">社会招聘</a></li>
+				   <li><a href="campus.html">校园招聘</a></li>
+				   <li><a href="internal.html">内部竞聘</a></li>
+                        </ul>
+                    </div> 
+                </li>
+<li class="nav_li"><a class="on" href="yf-19.html">研发中心</a>   
+                   <div class="subnav sub-ul07">
+                        <ul>
+				   <li><a href="yf-19.html">产品研发</a></li>
+				   <li><a href="yf-20.html">工艺创新</a></li>
+				   <li><a href="yf-21.html">服务革新</a></li>
+                        </ul>
+                    </div> 
+                </li>
+				<li class="nav_li"><a class="on" href="price-14831_6.html">产品服务</a>  
+                   <div class="subnav sub-ul05">
+                        <ul>
+				   <li><a href="price-14831_6.html">成功案例</a></li>
+				   <li><a href="price-14831_7.html">产品介绍</a></li>
+				   <li><a href="price-14831_8.html">新产品及价格预告</a></li>
+                        </ul>
+                    </div> 
+                </li> 
+				<li class="nav_li"><a class="on" href="product-12.html">联系我们</a>    
+                   <div class="subnav sub-ul04">
+                        <ul>
+				   <li><a href="product-12.html">联系我们</a></li>
+				   <li><a href="product-14.html">售后服务</a></li>
+				   <li><a href="product-15.html">经销加盟</a></li>
+				   <li><a href="product-16.html">技术支持</a></li>
+				   <li><a href="product-37.html">留言中心</a></li>
+                        </ul>
+                    </div>
+                </li>     
+            </ul>
+        </div>
+        <div class="subnavbg"></div>
+    </div>   
+</div><!--end header-->
+
+<div class="other-topimg" id="featured">
+    <div id="slider">
+        <ul>
+            <li class="sliderImage"><em class="img-top-bg"></em>
+            <img src="static/picture/P020131202603982816497.jpg">
+			</li>
+        </ul>
+   </div> 
+</div>
+<!-- main -->
+<div id="overlay">  
+    <div class="otherswrap" id="discover">
+	  <div class="layout">
+   <!-- -->
+	<div class="othersmenu fl">
+        <div class="other-titles">
+          <h2>集团概况</h2>
+        </div>
+       <div class="menu">
+         <ul>
+             <li><a href="about-1.html" class='tit'>集团简介</a></li>
+             <li><a href="about-2.html" class='tit'>总裁致辞</a></li>
+             <li><a href="about-3.html" class='tit'>董事会成员</a></li>
+             <li><a href="about-4.html" class='tit'>组织机构</a></li>
+             <li><a href="" class='tit'>发展历程</a></li>
+             <li><a href="about-6.html" class='tit'>企业文化</a></li>
+             <li><a href="about-7.html" class='tit'>资质荣誉</a></li>
+            
+         </ul>
+        </div>
+    </div>
+     
+    <div class="othersmain business-brandactiv fr">
+        <div class="other-titles">
+          <h2>发展历程</h2>
+        <div class="fr location"><a href="index.html">首页</a>&nbsp;&#8211;&nbsp;<a href="about-1.html">集团概况</a>&nbsp;&#8211;&nbsp;发展历程</div>
+        </div>
+		
+        <div id="mainc"><div style="text-align:left">
+	<span style="font-size:16px">2004年，阳逻水泥厂改制为民营股份制企业，以第二大股东身份进入阳逻水泥厂；</span>
+</div>
+<span style="font-size:16px">
+<div style="text-align:left">
+	2006年，水泥厂进行股权重组，当选为总经理，偿还债务几千万元；
+</div>
+<div style="text-align:left">
+	2008年，由于环保原因，政府拆除所有设备，提出“思路决定出路，人品铸就产品”的理念，对生产线进行重新规划、筹资、新建粉磨站；
+</div>
+<div style="text-align:left">
+	2009年，建武汉娲石商砼有限公司；
+</div>
+<div style="text-align:left">
+	2011年，由于没有熟料，新建日产5000吨绿色熟料新型干法生产线，同时成立了阳新娲石商砼有限公司；
+</div>
+<div style="text-align:left">
+	2012年，新建阳逻二期粉磨生产线；
+</div>
+<div style="text-align:left">
+	2013年，新建年产1000万吨绿色建材生产线并成立阳新娲石建材有限公司；
+</div>
+<div style="text-align:left">
+	2014年，组建娲石集团；
+</div>
+<div style="text-align:left">
+	2015年，成立武汉万世科技有限公司，进入科技产业；
+</div>
+<div style="text-align:left">
+	2016年，重组武汉阳逻通达水运有限公司，做强做大水运物流；
+</div>
+<div style="text-align:left">
+	2018年，成立湖北娲石生态治理有限公司，进入环境治理领域（石头上可以长草）；
+</div>
+<div style="text-align:left">
+	2019年，与武汉天研公司合作投资光谷物联港产业园，进入产业园区的投资、运营、孵化等相关领域；
+</div>
+<div style="text-align:left">
+	2019年，成立武汉固康口腔医院，进入医疗服务行业；
+</div>
+<div style="text-align:left">
+	2020年，成立阳新娲石矿投新材料有限公司，打造绿色建筑物料的示范企业；
+</div>
+<div style="text-align:left">
+	2021年，成立阳新娲石绿色材料有限公司，打造大型水泥智能化生产线；
+</div>
+<div style="text-align:left">
+	2021年，成立武汉娲石港务有限公司，打造港产城项目；
+</div>
+<div style="text-align:left">
+	<br>
+</div>
+<div style="text-align:left">
+</div>
+</span><span style="font-size:16px"></span></div>
+                                               
+            </div><!--end othersmain-->
+  
+</div>
+	<!-- -->
+	
+	  </div>
+	</div>
+
+
+<div class="clear"></div>
+<div class="gotopbox">
+	<div style="display: none" id="goTopBtn">
+    	<a class="iconbg btn-gotohome" href="index.html">返回到首页</a>
+    	<a class="iconbg btn-gototop" id="btn-gototop">回到顶部</a>
+    </div>
+</div><div class="footer">
+    <ul>
+        <li><a href="aq-22.html" title="网站地图">网站地图</a></li>
+        <li>|</li>
+        <li><a href="aq-23.html" title="隐私安全">隐私安全</a></li>
+        <li>|</li>
+        <li><a href="aq-24.html" title="站外导航">站外导航</a></li>
+        <li>|</li>
+        <li><a href="aq-25.html" title="版权所有">版权所有</a></li>
+        <li>|</li>
+        <li><a href="aq-26.html" title="常见问题">常见问题</a></li>
+        <li>|</li>
+        <li><a href="aq-27.html" title="联系方式">联系方式</a></li>
+    </ul>
+    <p>地址：武汉市新洲区阳逻街汽渡路488号&nbsp;&nbsp;&nbsp;&nbsp;电话：86-27-86964298&nbsp;&nbsp;详细联系方式，<a href="aq-27.html" title="联系方式">请点击这里</a></p>
+    <p><img src="http://www.hb-ws.cn/web/images/gf.png" width="20" height="15" position:="" absolute;bottom:="" 0;/="">鄂ICP备11019954号  Copyright &copy; 娲石水泥集团有限公司&nbsp;&nbsp;All Rights Reserved.</p>
+</div><!--end footer-->
+</body>
+<script type="text/javascript">
+function xx(){
+var container=document.getElementById("gonggao");
+container.appendChild(container.firstChild);
+}
+setInterval("xx()",3000);
+
+//$("#js_index_float").css("opacity",0.95);
+$("#js_xx_close").click(function(){
+$("#js_index_float").hide("fast");
+})
+ 
+</script>
+
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F9853c7575c323df5e1e362ce66f975e5' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+
+
+</html>
