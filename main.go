@@ -12,6 +12,8 @@ import (
 	"regexp"
 	"strings"
 	"time"
+
+	"github.com/klarkxy/gohtml"
 )
 
 const (
@@ -57,12 +59,8 @@ func GetFormatAllFile(pathname string, savePathName string, s []string) ([]strin
 		return s, err
 	}
 	for _, fi := range rd {
-		var fileSuffix string
-		fileSuffix = path.Ext(fi.Name()) //获取文件后缀
-		fmt.Println("fileSuffix =", fileSuffix)
-
-		var filenameOnly string
-		filenameOnly = strings.TrimSuffix(fi.Name(), fileSuffix) //获取文件名
+		fileSuffix := path.Ext(fi.Name())                         //获取文件后缀
+		filenameOnly := strings.TrimSuffix(fi.Name(), fileSuffix) //获取文件名
 		if fi.IsDir() {
 			fullDir := filepath.Join(fromSlash, fi.Name())
 			s, err = GetFormatAllFile(fullDir, savePathName, s)
@@ -95,6 +93,8 @@ func GetFormatAllFile(pathname string, savePathName string, s []string) ([]strin
 				if err != nil {
 					fmt.Println(err)
 				}
+				bootstrap := gohtml.NewHtml()
+				fmt.Println(bootstrap.String())
 			} else {
 				err := os.Mkdir(savePathName+strFloderName, os.ModePerm)
 				if err != nil {
@@ -178,7 +178,7 @@ func CheckWorlds() {
 		return
 	}
 	defer Rfile.Close()
-	Rdata, err := ioutil.ReadAll(Rfile)
+	Rdata, _ := ioutil.ReadAll(Rfile)
 
 	//open Json Dictionary.json
 	Dfile, err := os.Open(EnglishDictJSONFILE) // For read access.
@@ -187,7 +187,7 @@ func CheckWorlds() {
 		return
 	}
 	defer Dfile.Close()
-	Ddata, err := ioutil.ReadAll(Dfile)
+	Ddata, _ := ioutil.ReadAll(Dfile)
 	// fmt.Println(Ddata)
 
 	m := make(map[string]string)
@@ -236,7 +236,7 @@ func compressStr(str string) string {
 		return ""
 	}
 	//匹配一个或多个空白符的正则表达式
-	reg := regexp.MustCompile("\\s+")
+	reg := regexp.MustCompile(`\\s+`)
 	return reg.ReplaceAllString(str, " ")
 }
 
@@ -248,13 +248,12 @@ func formatDictionary() {
 		return
 	}
 	defer Dfile.Close()
-	len, err := Dfile.Seek(0, 2) //获取文件长度
+	len, _ := Dfile.Seek(0, 2) //获取文件长度
 	strbyte := make([]byte, len)
 	Dfile.Seek(0, 0)    //移回指针到文件开头
 	Dfile.Read(strbyte) //读文件
 	aryWorldList := strings.Split(string(strbyte), "\r\n")
-	var DictionaryMap map[string]string /*创建集合 */
-	DictionaryMap = make(map[string]string)
+	DictionaryMap := make(map[string]string)
 	for _, value := range aryWorldList {
 		aryContent := strings.Split(value, "      ")
 		// fmt.Println(len(aryContent))
@@ -287,13 +286,12 @@ func addEnglishWorldList() {
 		return
 	}
 	defer Dfile.Close()
-	len, err := Dfile.Seek(0, 2) //获取文件长度
+	len, _ := Dfile.Seek(0, 2) //获取文件长度
 	strbyte := make([]byte, len)
 	Dfile.Seek(0, 0)    //移回指针到文件开头
 	Dfile.Read(strbyte) //读文件
 	aryWorldList := strings.Split(string(strbyte), "\r\n")
-	var DictionaryMap map[string]string /*创建集合 */
-	DictionaryMap = make(map[string]string)
+	DictionaryMap := make(map[string]string)
 	for _, value := range aryWorldList {
 		if _, ok := DictionaryMap[value]; !ok {
 			DictionaryMap[value] = ""
